@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="455mm" xmlns="http://www.w3.org/2000/svg" height="301mm" version="1.1" viewBox="0 0 1723 1141" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <a target="_parent" xlink:href="Full15.htm#64">
+      <polyline fill="none" points="200,226 559,226" stroke="#800000" stroke-width="1"/>
+      <polygon fill="#800000" points="559,226 545,229 545,223" stroke="#800000" stroke-width="1" stroke-linejoin="miter"/>
+      <text x="379" y="222" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋体'" text-anchor="middle">FK_MANAGER_经理-员工_EMPLOYEE</text>
+      <text x="254" y="223" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋体'" text-anchor="middle">__INHERITED__</text>
+   </a>
+   <a target="_parent" xlink:href="Full14.htm#58">
+      <path d="M1011,42 L654,42 A8,8 0 0,0 646,50 L646,178" fill="none" stroke="#800000" stroke-width="1"/>
+      <polygon fill="#800000" points="646,178 643,165 649,165" stroke="#800000" stroke-width="1" stroke-linejoin="miter"/>
+      <text x="646" y="38" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋体'" text-anchor="middle">FK_COMMON_E_普通员工-员工_EMPLOYEE</text>
+      <text x="957" y="51" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋体'" text-anchor="middle">__INHERITED__</text>
+   </a>
+   <a target="_parent" xlink:href="Full10.htm#34">
+      <path d="M941,751 L941,848 A8,8 0 0,1 933,856 L674,856" fill="none" stroke="#800040" stroke-width="1"/>
+      <polygon fill="#800040" points="674,856 688,853 688,859" stroke="#800040" stroke-width="1" stroke-linejoin="miter"/>
+      <text x="941" y="859" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋体'" text-anchor="middle">FK_ACCOUNT_开户_BRANCH</text>
+   </a>
+   <a target="_parent" xlink:href="Full6.htm#10">
+      <path d="M935,1072 L957,1072 A8,8 0 0,0 965,1064 L965,751" fill="none" stroke="#800000" stroke-width="1"/>
+      <polygon fill="#800000" points="965,751 968,764 962,764" stroke="#800000" stroke-width="1" stroke-linejoin="miter"/>
+      <text x="965" y="1082" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋体'" text-anchor="middle">FK_DEPOSIT__储蓄账户-账户_ACCOUNT</text>
+      <text x="990" y="1069" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋体'" text-anchor="middle">__INHERITED__</text>
+   </a>
+   <a target="_parent" xlink:href="Full13.htm#52">
+      <polyline fill="none" points="1550,692 1069,692" stroke="#800000" stroke-width="1"/>
+      <polygon fill="#800000" points="1069,692 1082,689 1082,695" stroke="#800000" stroke-width="1" stroke-linejoin="miter"/>
+      <text x="1309" y="688" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋体'" text-anchor="middle">FK_CHECH_AC_支票账户-账户_ACCOUNT</text>
+      <text x="1495" y="701" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋体'" text-anchor="middle">__INHERITED__</text>
+   </a>
+   <a target="_parent" xlink:href="Full11.htm#40">
+      <path d="M833,616 L818,616 A8,8 0 0,1 810,608 L810,546" fill="none" stroke="#800040" stroke-width="1"/>
+      <polygon fill="#800040" points="810,546 813,559 807,559" stroke="#800040" stroke-width="1" stroke-linejoin="miter"/>
+      <text x="810" y="626" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋体'" text-anchor="middle">FK_OWNACCOU_拥有账户_CLIENT</text>
+   </a>
+   <a target="_parent" xlink:href="Full12.htm#46">
+      <path d="M929,643 L929,653 A8,8 0 0,0 937,661 L975,661 A8,8 0 0,1 983,669 L983,680" fill="none" stroke="#800040" stroke-width="1"/>
+      <polygon fill="#800040" points="983,680 980,667 986,667" stroke="#800040" stroke-width="1" stroke-linejoin="miter"/>
+      <text x="956" y="664" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋体'" text-anchor="middle">FK_OWNACCOU_拥有账户2_ACCOUNT</text>
+   </a>
+   <a target="_parent" xlink:href="Full19.htm#88">
+      <polyline fill="none" points="598,274 598,827" stroke="#800040" stroke-width="1"/>
+      <polygon fill="#800040" points="598,827 595,814 601,814" stroke="#800040" stroke-width="1" stroke-linejoin="miter"/>
+      <text x="598" y="553" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋体'" text-anchor="middle">FK_EMPLOYEE_雇佣_BRANCH</text>
+   </a>
+   <a target="_parent" xlink:href="Full18.htm#82">
+      <path d="M94,661 L94,581 L92,581 L92,500" fill="none" stroke="#800040" stroke-width="1"/>
+      <polygon fill="#800040" points="92,500 95,513 89,513" stroke="#800040" stroke-width="1" stroke-linejoin="miter"/>
+      <text x="93" y="583" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋体'" text-anchor="middle">FK_PAYMENTS_贷款-支付_LOANS</text>
+   </a>
+   <a target="_parent" xlink:href="Full7.htm#16">
+      <path d="M614,827 L614,445 A5,5 0 0,0 609,440 L603,440" fill="none" stroke="#800040" stroke-width="1"/>
+      <polyline fill="none" points="593,440 168,440" stroke="#800040" stroke-width="1"/>
+      <path d="M603,440 A5,5 0 0,0 598,435" fill="none" stroke="#800040" stroke-width="1"/>
+      <line x1="598" x2="598" y1="435" y2="435" stroke="#800040" stroke-width="1"/>
+      <path d="M598,435 A5,5 0 0,0 593,440" fill="none" stroke="#800040" stroke-width="1"/>
+      <polygon fill="#800040" points="614,827 611,814 617,814" stroke="#800040" stroke-width="1" stroke-linejoin="miter"/>
+      <text x="614" y="436" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋体'" text-anchor="middle">FK_LOANS_发放贷款_BRANCH</text>
+   </a>
+   <a target="_parent" xlink:href="Full8.htm#22">
+      <polyline fill="none" points="403,465 168,465" stroke="#800040" stroke-width="1"/>
+      <polygon fill="#800040" points="168,465 181,462 181,468" stroke="#800040" stroke-width="1" stroke-linejoin="miter"/>
+      <text x="285" y="461" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋体'" text-anchor="middle">FK_CLIENTLO_客户贷款_LOANS</text>
+   </a>
+   <a target="_parent" xlink:href="Full9.htm#28">
+      <path d="M794,475 L794,475 L619,475" fill="none" stroke="#800040" stroke-width="1"/>
+      <polyline fill="none" points="609,475 603,475" stroke="#800040" stroke-width="1"/>
+      <path d="M619,475 A5,5 0 0,0 614,470" fill="none" stroke="#800040" stroke-width="1"/>
+      <line x1="614" x2="614" y1="470" y2="470" stroke="#800040" stroke-width="1"/>
+      <path d="M614,470 A5,5 0 0,0 609,475" fill="none" stroke="#800040" stroke-width="1"/>
+      <polyline fill="none" points="593,475 589,475" stroke="#800040" stroke-width="1"/>
+      <path d="M603,475 A5,5 0 0,0 598,470" fill="none" stroke="#800040" stroke-width="1"/>
+      <line x1="598" x2="598" y1="470" y2="470" stroke="#800040" stroke-width="1"/>
+      <path d="M598,470 A5,5 0 0,0 593,475" fill="none" stroke="#800040" stroke-width="1"/>
+      <polygon fill="#800040" points="794,475 791,462 797,462" stroke="#800040" stroke-width="1" stroke-linejoin="miter"/>
+      <text x="793" y="471" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋体'" text-anchor="middle">FK_CLIENTLO_客户贷款2_CLIENT</text>
+   </a>
+   <a target="_parent" xlink:href="Full17.htm#76">
+      <path d="M1088,377 L622,377 A8,8 0 0,1 614,369 L614,274" fill="none" stroke="#8080ff" stroke-width="1"/>
+      <polygon fill="#8080ff" points="614,274 617,287 611,287" stroke="#8080ff" stroke-width="1" stroke-linejoin="miter"/>
+      <text x="614" y="387" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋体'" text-anchor="middle">FK_RESPONSI_RESPONSIB_EMPLOYEE</text>
+   </a>
+   <a target="_parent" xlink:href="Full16.htm#70">
+      <path d="M1088,393 L818,393 A8,8 0 0,0 810,401 L810,475" fill="none" stroke="#8080ff" stroke-width="1"/>
+      <polygon fill="#8080ff" points="810,475 807,462 813,462" stroke="#8080ff" stroke-width="1" stroke-linejoin="miter"/>
+      <text x="809" y="389" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋体'" text-anchor="middle">FK_RESPONSI_RESPONSIB_CLIENT</text>
+   </a>
+   <a target="_parent" xlink:href="Full5.htm#4">
+      <path d="M1011,30 L130,30 A8,8 0 0,0 122,38 L122,191" fill="none" stroke="#800040" stroke-width="1"/>
+      <polygon fill="#800040" points="122,191 119,178 125,178" stroke="#800040" stroke-width="1" stroke-linejoin="miter"/>
+      <text x="122" y="26" fill="#000000" font-size="10" font-family="'Arial Unicode MS','新宋体'" text-anchor="middle">FK_COMMON_E_REFERENCE_MANAGER</text>
+   </a>
+   <a target="_parent" xlink:href="Full25.htm#43">
+      <rect x="559" y="178" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <defs>
+         <linearGradient id="Gradient1" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+            <stop offset="5%" stop-color="#ffffff"/>
+            <stop offset="95%" stop-color="#e9ca83"/>
+         </linearGradient>
+      </defs>
+      <rect x="559" y="178" fill="url(#Gradient1)" width="175" height="96" stroke="#808040" stroke-width="1"/>
+      <text x="646" y="189" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="middle">员工</text>
+      <line x1="559" x2="734" y1="195" y2="195" stroke="#808040" stroke-width="1"/>
+      <text x="563" y="205" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">员工身份证号</text>
+      <text x="563" y="218" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">支行名称</text>
+      <text x="563" y="231" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">手机号</text>
+      <text x="563" y="244" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">家庭地址</text>
+      <text x="563" y="257" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">入职时间</text>
+      <text x="563" y="270" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">员工姓名</text>
+      <text x="631" y="205" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">varchar(20)</text>
+      <text x="631" y="218" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">varchar(255)</text>
+      <text x="631" y="231" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">varchar(20)</text>
+      <text x="631" y="244" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">longtext</text>
+      <text x="631" y="257" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">date</text>
+      <text x="631" y="270" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">varchar(255)</text>
+      <text x="697" y="205" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">&lt;pk&gt;</text>
+      <text x="697" y="218" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">&lt;fk&gt;</text>
+   </a>
+   <a target="_parent" xlink:href="Full26.htm#110">
+      <rect x="722" y="475" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <defs>
+         <linearGradient id="Gradient2" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+            <stop offset="5%" stop-color="#ffffff"/>
+            <stop offset="95%" stop-color="#e9ca83"/>
+         </linearGradient>
+      </defs>
+      <rect x="722" y="475" fill="url(#Gradient2)" width="175" height="71" stroke="#808040" stroke-width="1"/>
+      <text x="809" y="486" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="middle">客户</text>
+      <line x1="722" x2="897" y1="492" y2="492" stroke="#808040" stroke-width="1"/>
+      <text x="727" y="502" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">客户身份证号</text>
+      <text x="727" y="515" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">客户姓名</text>
+      <text x="727" y="528" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">城市</text>
+      <text x="727" y="541" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">街道</text>
+      <text x="795" y="502" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">varchar(20)</text>
+      <text x="795" y="515" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">varchar(255)</text>
+      <text x="795" y="528" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">varchar(255)</text>
+      <text x="795" y="541" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">varchar(255)</text>
+      <text x="861" y="502" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">&lt;pk&gt;</text>
+   </a>
+   <a target="_parent" xlink:href="Full31.htm#342">
+      <rect x="522" y="827" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <defs>
+         <linearGradient id="Gradient3" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+            <stop offset="5%" stop-color="#ffffff"/>
+            <stop offset="95%" stop-color="#e9ca83"/>
+         </linearGradient>
+      </defs>
+      <rect x="522" y="827" fill="url(#Gradient3)" width="152" height="58" stroke="#808040" stroke-width="1"/>
+      <text x="598" y="838" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="middle">支行</text>
+      <line x1="522" x2="674" y1="844" y2="844" stroke="#808040" stroke-width="1"/>
+      <text x="526" y="854" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">支行名称</text>
+      <text x="526" y="867" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">资产</text>
+      <text x="526" y="880" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">城市</text>
+      <text x="574" y="854" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">varchar(255)</text>
+      <text x="574" y="867" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">float(8,2)</text>
+      <text x="574" y="880" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">varchar(255)</text>
+      <text x="640" y="854" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">&lt;pk&gt;</text>
+   </a>
+   <a target="_parent" xlink:href="Full36.htm#584">
+      <rect x="16" y="191" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <defs>
+         <linearGradient id="Gradient4" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+            <stop offset="5%" stop-color="#ffffff"/>
+            <stop offset="95%" stop-color="#e9ca83"/>
+         </linearGradient>
+      </defs>
+      <rect x="16" y="191" fill="url(#Gradient4)" width="184" height="64" stroke="#808040" stroke-width="1"/>
+      <text x="108" y="202" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="middle">部门经理</text>
+      <line x1="16" x2="200" y1="208" y2="208" stroke="#808040" stroke-width="1"/>
+      <text x="21" y="218" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">员工身份证号</text>
+      <text x="21" y="231" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">部门</text>
+      <text x="89" y="218" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">varchar(20)</text>
+      <text x="89" y="231" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">varchar(255)</text>
+      <text x="155" y="218" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">&lt;pk,fk&gt;</text>
+   </a>
+   <a target="_parent" xlink:href="Full32.htm#384">
+      <rect x="1011" y="16" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <defs>
+         <linearGradient id="Gradient5" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+            <stop offset="5%" stop-color="#ffffff"/>
+            <stop offset="95%" stop-color="#e9ca83"/>
+         </linearGradient>
+      </defs>
+      <rect x="1011" y="16" fill="url(#Gradient5)" width="211" height="52" stroke="#808040" stroke-width="1"/>
+      <text x="1116" y="27" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="middle">普通员工</text>
+      <line x1="1011" x2="1222" y1="33" y2="33" stroke="#808040" stroke-width="1"/>
+      <text x="1016" y="43" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">员工身份证号</text>
+      <text x="1016" y="56" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">部门经理身份证号</text>
+      <text x="1104" y="43" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">varchar(20)</text>
+      <text x="1104" y="56" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">varchar(20)</text>
+      <text x="1164" y="43" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">&lt;pk,fk1&gt;</text>
+      <text x="1164" y="56" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">&lt;fk2&gt;</text>
+   </a>
+   <a target="_parent" xlink:href="Full34.htm#474">
+      <rect x="893" y="680" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <defs>
+         <linearGradient id="Gradient6" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+            <stop offset="5%" stop-color="#ffffff"/>
+            <stop offset="95%" stop-color="#e9ca83"/>
+         </linearGradient>
+      </defs>
+      <rect x="893" y="680" fill="url(#Gradient6)" width="176" height="71" stroke="#808040" stroke-width="1"/>
+      <text x="981" y="691" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="middle">账户</text>
+      <line x1="893" x2="1069" y1="697" y2="697" stroke="#808040" stroke-width="1"/>
+      <text x="898" y="707" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">账户号码</text>
+      <text x="898" y="720" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">支行名称</text>
+      <text x="898" y="733" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">余额</text>
+      <text x="898" y="746" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">最近访问日期</text>
+      <text x="966" y="707" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">varchar(50)</text>
+      <text x="966" y="720" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">varchar(255)</text>
+      <text x="966" y="733" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">float(8,2)</text>
+      <text x="966" y="746" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">date</text>
+      <text x="1032" y="707" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">&lt;pk&gt;</text>
+      <text x="1032" y="720" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">&lt;fk&gt;</text>
+   </a>
+   <a target="_parent" xlink:href="Full24.htm#7">
+      <rect x="777" y="1072" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <defs>
+         <linearGradient id="Gradient7" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+            <stop offset="5%" stop-color="#ffffff"/>
+            <stop offset="95%" stop-color="#e9ca83"/>
+         </linearGradient>
+      </defs>
+      <rect x="777" y="1072" fill="url(#Gradient7)" width="158" height="54" stroke="#808040" stroke-width="1"/>
+      <text x="856" y="1083" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="middle">储蓄账户</text>
+      <line x1="777" x2="935" y1="1089" y2="1089" stroke="#808040" stroke-width="1"/>
+      <text x="782" y="1099" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">账户号码</text>
+      <text x="782" y="1112" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">利率</text>
+      <text x="830" y="1099" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">varchar(50)</text>
+      <text x="830" y="1112" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">float</text>
+      <text x="890" y="1099" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">&lt;pk,fk&gt;</text>
+   </a>
+   <a target="_parent" xlink:href="Full30.htm#306">
+      <rect x="1550" y="665" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <defs>
+         <linearGradient id="Gradient8" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+            <stop offset="5%" stop-color="#ffffff"/>
+            <stop offset="95%" stop-color="#e9ca83"/>
+         </linearGradient>
+      </defs>
+      <rect x="1550" y="665" fill="url(#Gradient8)" width="158" height="54" stroke="#808040" stroke-width="1"/>
+      <text x="1629" y="676" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="middle">支票账户</text>
+      <line x1="1550" x2="1708" y1="682" y2="682" stroke="#808040" stroke-width="1"/>
+      <text x="1555" y="692" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">账户号码</text>
+      <text x="1555" y="705" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">透支额度</text>
+      <text x="1603" y="692" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">varchar(50)</text>
+      <text x="1603" y="705" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">float(8,2)</text>
+      <text x="1663" y="692" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">&lt;pk,fk&gt;</text>
+   </a>
+   <a target="_parent" xlink:href="Full35.htm#529">
+      <rect x="15" y="430" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <defs>
+         <linearGradient id="Gradient9" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+            <stop offset="5%" stop-color="#ffffff"/>
+            <stop offset="95%" stop-color="#e9ca83"/>
+         </linearGradient>
+      </defs>
+      <rect x="15" y="430" fill="url(#Gradient9)" width="153" height="70" stroke="#808040" stroke-width="1"/>
+      <text x="91" y="441" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="middle">贷款</text>
+      <line x1="15" x2="168" y1="447" y2="447" stroke="#808040" stroke-width="1"/>
+      <text x="20" y="457" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">贷款号</text>
+      <text x="20" y="470" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">支行名称</text>
+      <text x="20" y="483" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">金额</text>
+      <text x="20" y="496" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">逐次支付</text>
+      <text x="68" y="457" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">varchar(60)</text>
+      <text x="68" y="470" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">varchar(255)</text>
+      <text x="68" y="483" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">float(8,2)</text>
+      <text x="68" y="496" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">int</text>
+      <text x="134" y="457" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">&lt;pk&gt;</text>
+      <text x="134" y="470" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">&lt;fk&gt;</text>
+   </a>
+   <a target="_parent" xlink:href="Full29.htm#252">
+      <rect x="21" y="661" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <defs>
+         <linearGradient id="Gradient10" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+            <stop offset="5%" stop-color="#ffffff"/>
+            <stop offset="95%" stop-color="#e9ca83"/>
+         </linearGradient>
+      </defs>
+      <rect x="21" y="661" fill="url(#Gradient10)" width="147" height="71" stroke="#808040" stroke-width="1"/>
+      <text x="94" y="672" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="middle">支付</text>
+      <line x1="21" x2="168" y1="678" y2="678" stroke="#808040" stroke-width="1"/>
+      <text x="26" y="688" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">贷款号</text>
+      <text x="26" y="701" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">支付号</text>
+      <text x="26" y="714" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">支付金额</text>
+      <text x="26" y="727" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">交易日期</text>
+      <text x="74" y="688" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">varchar(60)</text>
+      <text x="74" y="701" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">varchar(60)</text>
+      <text x="74" y="714" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">float(8,2)</text>
+      <text x="74" y="727" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">date</text>
+      <text x="134" y="688" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">&lt;fk&gt;</text>
+      <text x="134" y="701" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">&lt;pk&gt;</text>
+   </a>
+   <a target="_parent" xlink:href="Full33.htm#421">
+      <rect x="1088" y="348" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <defs>
+         <linearGradient id="Gradient11" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+            <stop offset="5%" stop-color="#ffffff"/>
+            <stop offset="95%" stop-color="#d0d0ff"/>
+         </linearGradient>
+      </defs>
+      <rect x="1088" y="348" fill="url(#Gradient11)" width="187" height="58" stroke="#8080ff" stroke-width="1"/>
+      <text x="1181" y="359" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="middle">负责</text>
+      <line x1="1088" x2="1275" y1="365" y2="365" stroke="#8080ff" stroke-width="1"/>
+      <text x="1092" y="375" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">员工身份证号</text>
+      <text x="1092" y="388" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">客户身份证号</text>
+      <text x="1092" y="401" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">负责类型</text>
+      <text x="1160" y="375" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">varchar(20)</text>
+      <text x="1160" y="388" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">varchar(20)</text>
+      <text x="1160" y="401" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start">tinyint</text>
+      <text x="1220" y="375" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">&lt;pk,fk1&gt;</text>
+      <text x="1220" y="388" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">&lt;pk,fk2&gt;</text>
+   </a>
+   <a target="_parent" xlink:href="Full28.htm#205">
+      <rect x="833" y="589" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <defs>
+         <linearGradient id="Gradient12" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+            <stop offset="5%" stop-color="#ffffff"/>
+            <stop offset="95%" stop-color="#d28902"/>
+         </linearGradient>
+      </defs>
+      <rect x="833" y="589" fill="url(#Gradient12)" width="187" height="54" stroke="#800040" stroke-width="1"/>
+      <text x="926" y="600" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="middle">拥有账户</text>
+      <line x1="833" x2="1020" y1="606" y2="606" stroke="#800040" stroke-width="1"/>
+      <text x="838" y="616" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">客户身份证号</text>
+      <text x="838" y="629" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">账户号码</text>
+      <text x="906" y="616" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">varchar(20)</text>
+      <text x="906" y="629" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">varchar(50)</text>
+      <text x="966" y="616" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">&lt;pk,fk1&gt;</text>
+      <text x="966" y="629" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">&lt;pk,fk2&gt;</text>
+   </a>
+   <a target="_parent" xlink:href="Full27.htm#158">
+      <rect x="403" y="448" fill="#ffffff" width="0" height="0" stroke="none" stroke-width="0"/>
+      <defs>
+         <linearGradient id="Gradient13" x1="0%" x2="100%" y1="0%" y2="100%" gradientUnits="objectBoundingBox">
+            <stop offset="5%" stop-color="#ffffff"/>
+            <stop offset="95%" stop-color="#d28902"/>
+         </linearGradient>
+      </defs>
+      <rect x="403" y="448" fill="url(#Gradient13)" width="186" height="54" stroke="#800040" stroke-width="1"/>
+      <text x="496" y="459" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="middle">客户贷款</text>
+      <line x1="403" x2="589" y1="465" y2="465" stroke="#800040" stroke-width="1"/>
+      <text x="407" y="475" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">贷款号</text>
+      <text x="407" y="488" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">客户身份证号</text>
+      <text x="475" y="475" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">varchar(60)</text>
+      <text x="475" y="488" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">varchar(20)</text>
+      <text x="535" y="475" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">&lt;pk,fk1&gt;</text>
+      <text x="535" y="488" fill="#000000" font-size="10" font-family="'Arial Unicode MS','Arial'" text-anchor="start" text-decoration="underline">&lt;pk,fk2&gt;</text>
+   </a>
+</svg>
