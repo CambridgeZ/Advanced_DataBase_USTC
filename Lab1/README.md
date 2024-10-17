@@ -18,11 +18,11 @@
 ## 文件架构介绍
 
 ```
-├── BankDatabase.cdm                //概念数据模型
-├── BankDatabasePDM.pdm             //物理数据模型
-├── Full Conceptual Report_files    //概念设计数据报告，用浏览器打开该文件夹下 Full Conceptual Report_toc.html
-├── Full Physical Report_files      //物理数据模型报告，用浏览器打开该文件夹下 Full Physical Report_toc.html
+├── BankDatabase.cdm                #概念数据模型
+├── BankDatabasePDM.pdm             #物理数据模型
+├── Full Conceptual Report_files    #概念设计数据报告，用浏览器打开该文件夹下 Full Conceptual Report_toc.html
+├── Full Physical Report_files      #物理数据模型报告，用浏览器打开该文件夹下 Full Physical Report_toc.html
 ├── README.md                       
-├── adb-lab01-template.docx         //实验报告
-└── 数据库实现.sql                    //数据的物理部署,所用环境为 MySQL8.3.0
+├── adb-lab01-template.docx         #实验报告
+└── 数据库实现.sql                    #数据的物理部署,所用环境为 MySQL8.3.0
 ```
