@@ -24,3 +24,19 @@ FILE* DSMgr::GetFile(){
     return cuurentFile;
 }
 
+void DSMgr::SetUse(int index, int use_bit) {
+    pages[index] = use_bit;
+}
+
+int DSMgr::GetUse(int index) {
+    return pages[index];
+}
+
+void DSMgr::IncNumPages() {
+    numPages++;
+}
+
+int DSMgr::GetNumPages() {
+    return numPages;
+}
+

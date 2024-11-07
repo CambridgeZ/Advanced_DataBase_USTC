@@ -7,7 +7,8 @@
 #include "Frame.hpp"
 
 #define DEFBUFSIZE 1024
-
+// 读磁盘的时候：根据page_id 确定 Buffer 当中是否存在相应的frame
+// 写磁盘的时候： 根据frame_id 快速找到对应的page_id
 
 
 

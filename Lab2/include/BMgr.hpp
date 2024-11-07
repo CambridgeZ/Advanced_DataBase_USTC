@@ -9,6 +9,7 @@
 struct BCB;
 struct bFrame;
 
+// Buffer Manager
 class BMgr{
 public:
     BMgr();
@@ -30,7 +31,13 @@ public:
 
 private:
     // Hash Table
+
+    // 通过frame_id 来找到对应的 page_id
     int ftop[DEFBUFSIZE];
+
+    // 一个BCB指针数组，每个BCB其实指向后面是一个链表，这个链表是用来解决hash冲突的
+    // 通过page_id 来找到对应的 frame
+    // BCB 存储在 page_id % DEFBUFSIZE 的链表里面
     BCB* ptof[DEFBUFSIZE];
 };
 

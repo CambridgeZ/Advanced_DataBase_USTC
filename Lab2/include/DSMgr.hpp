@@ -8,7 +8,6 @@
 //data storage manager 
 #include <string>
 
-
 using std::string;
 
 #define MAXPAGES 1000
@@ -24,10 +23,10 @@ public:
     int WritePage(int frame_id, bFrame frm);
     int Seek(int offset, int pos);
     FILE* GetFile();
-    void IncNumPages();
-    int GetNumPages();
-    void SetUse(int index, int use_bit);
-    int GetUse(int index);
+    inline void IncNumPages();
+    inline int GetNumPages();
+    inline void SetUse(int index, int use_bit);
+    inline int GetUse(int index);
 private:
     FILE* cuurentFile;
     int numPages;

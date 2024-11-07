@@ -6,6 +6,8 @@
 
 #define FRAMESIZE 4096
 
+// 表示和存放一个磁盘块
+
 struct bFrame{
     char field[FRAMESIZE];
 };
