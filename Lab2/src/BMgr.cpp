@@ -1,6 +1,6 @@
-#include "BMgr.hpp"
-#include "Frame.hpp"
-#include "BCB.hpp"
+#include "../include/BMgr.hpp"
+#include "../include/Frame.hpp"
+#include "../include/BCB.hpp"
 
 BMgr::BMgr(){
     for(int i = 0; i < DEFBUFSIZE; i++){

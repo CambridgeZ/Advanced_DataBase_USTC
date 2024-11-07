@@ -1,5 +1,5 @@
-#include "DSMgr.hpp"
-#include "Frame.hpp"
+#include "../include/DSMgr.hpp"
+#include "../include/Frame.hpp"
 
 int DSMgr::OpenFile(string filename){
     cuurentFile = fopen(filename.c_str(), "r+");
