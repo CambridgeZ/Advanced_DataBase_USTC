@@ -4,6 +4,8 @@
 #ifndef __BCB_HPP__
 #define __BCB_HPP__
 
+#include "config.hpp"
+
 //buffer control block
 
 struct BCB{
@@ -11,7 +13,7 @@ struct BCB{
     int page_id;
     int frame_id;
     int latch;      // 是否被锁住 0表示没有被锁住 1表示被锁住
-    int count;
+    int count;      // 计数器
     int dirty;
     BCB* next;
 };

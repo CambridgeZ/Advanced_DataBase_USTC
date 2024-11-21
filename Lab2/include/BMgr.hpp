@@ -4,6 +4,7 @@
 #ifndef __BMGR_HPP__
 #define __BMGR_HPP__
 
+#include "config.hpp"
 #include "DSMgr.hpp"
 
 struct BCB;
@@ -14,6 +15,8 @@ class BMgr{
 public:
     BMgr();
     // Interface functions
+
+    // 查找页面是否已在缓冲区中，若不存在则加载页面
     int FixPage(int page_id, int prot);
     void NewPage(int& page_id, bFrame& frm);
     int UnfixPage(int page_id);
@@ -21,7 +24,10 @@ public:
     int NumFreeFrames();
 
     // Internal functions
+    // 选择替换页面。
     int SelectVictim();
+
+    // 通过page_id获取frame_id。
     int Hash(int page_id);
     void RemoveBCB(BCB* ptr, int page_id);
     void RemoveLRUEle(int frame_id);
@@ -39,6 +45,11 @@ private:
     // 通过page_id 来找到对应的 frame
     // BCB 存储在 page_id % DEFBUFSIZE 的链表里面
     BCB* ptof[DEFBUFSIZE];
+
+    // 用于替换的算法
+    LRUReplacer lru;
+
+    DSMgr* dsMgr;
 };
 
 #endif // __BMGR_HPP__

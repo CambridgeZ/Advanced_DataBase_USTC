@@ -26,3 +26,44 @@
 ├── adb-lab01-template.docx         #实验报告
 └── 数据库实现.sql                    #数据的物理部署,所用环境为 MySQL8.3.0
 ```
+
+## 环境要求
+
++ 操作系统：Windows 10 或更新版本（建议安装 Power Designer）
++ 软件版本：
+    + SAP(Sybase) Power Designer 16.x
+	+ MySQL 8.3.0（或兼容版本）
++ 数据库管理工具：推荐使用 MySQL Workbench 或 Navicat 连接 MySQL 数据库。
+
+## 使用说明
+
+1. **概念数据模型的查看**
+使用 Power Designer 打开 BankDatabase.cdm 文件以查看银行业务的概念模型。
+
+2. **物理数据模型的查看**
+使用 Power Designer 打开 BankDatabasePDM.pdm 文件以查看银行业务的物理模型。
+
+3. **生成数据库**
+运行 数据库实现.sql 文件将物理模型部署到 MySQL 数据库中，步骤如下：
+    1. 打开 MySQL Workbench 或 Navicat。
+	2. 新建一个数据库（建议命名为 BankDatabase）。
+	3. 执行 数据库实现.sql 文件以创建所有表和约束。
+
+4. **报告查看**
+打开以下文件夹中的 HTML 文件以查看详细的报告：
+	+ **概念模型报告**：Full Conceptual Report_files/Full Conceptual Report_toc.html
+	+ **物理模型报告**：Full Physical Report_files/Full Physical Report_toc.html
+
+## 项目目标
+
+本实验旨在通过需求分析、概念建模和物理建模三个阶段，掌握以下技能：
++ 数据库需求分析和抽象建模。
++ 使用 Power Designer 创建数据库概念模型（CDM）和物理模型（PDM）。
++ 将数据库设计转换为 MySQL 的物理实现。
++ 理解并实现复杂的数据库约束关系。
+
+## 贡献
+
+如需改进或报告问题，请通过以下方式联系项目负责人：
+  + 邮箱：jianqiaozh@mail.ustc.edn.cn
+  + GitHub（结课前项目设为private）: https://github.com/CambridgeZ/Advanced_DataBase_USTC 

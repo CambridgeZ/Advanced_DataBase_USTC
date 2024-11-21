@@ -4,7 +4,7 @@
 #ifndef __FRAME_HPP__
 #define __FRAME_HPP__
 
-#define FRAMESIZE 4096
+#include "config.hpp"
 
 // 表示和存放一个磁盘块
 

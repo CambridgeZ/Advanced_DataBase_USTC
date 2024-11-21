@@ -1,5 +1,12 @@
 #include "../include/DSMgr.hpp"
 #include "../include/Frame.hpp"
+#include <cstring>
+#include <stdio.h>
+#include <stdlib.h>
+#include <iostream>
+
+using std::cerr;
+
 
 int DSMgr::OpenFile(string filename){
     cuurentFile = fopen(filename.c_str(), "r+");
@@ -39,4 +46,30 @@ void DSMgr::IncNumPages() {
 int DSMgr::GetNumPages() {
     return numPages;
 }
+
+
+int DSMgr::Seek(int offset, int pos) {
+    return fseek(cuurentFile, offset, pos);
+}
+
+
+
+int DSMgr::WritePage(int frame_id, bFrame& frm) {
+    if(frame_id >= numPages){
+        cerr << "Frame_id is out of range" << endl;
+        return -1;
+    }
+    if(Seek(frame_id * FRAMESIZE, SEEK_SET) != 0){
+        cerr << "Seek Error" << endl;
+        return -1;
+    }
+    if(fwrite(frm.field, FRAMESIZE, 1, cuurentFile) != 1){
+        cerr << "WritePage Error" << endl;
+        return -1;
+    }
+    return 0;
+}
+
+
+
 
