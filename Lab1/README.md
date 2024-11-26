@@ -50,7 +50,7 @@
 	3. 执行 数据库实现.sql 文件以创建所有表和约束。
 
 4. **报告查看**
-打开以下文件夹中的 HTML 文件以查看详细的报告：
+	打开以下文件夹中的 HTML 文件以查看详细的报告：
 	+ **概念模型报告**：Full Conceptual Report_files/Full Conceptual Report_toc.html
 	+ **物理模型报告**：Full Physical Report_files/Full Physical Report_toc.html
 
@@ -66,4 +66,4 @@
 
 如需改进或报告问题，请通过以下方式联系项目负责人：
   + 邮箱：jianqiaozh@mail.ustc.edn.cn
-  + GitHub（结课前项目设为private）: https://github.com/CambridgeZ/Advanced_DataBase_USTC 
+  + GitHub（结课前项目为private）: https://github.com/CambridgeZ/Advanced_DataBase_USTC 
