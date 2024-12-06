@@ -10,5 +10,11 @@
 #define FRAMESIZE 4096
 
 #define DEFBUFSIZE 1024
+#define FRAME_NUM 1024
+
+#include <cstddef>
+
+using frame_id_t = int;
+using page_id_t = int;
 
 #endif //LAB2_CONFIG_HPP

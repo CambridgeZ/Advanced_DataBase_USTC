@@ -6,29 +6,37 @@
 
 #include "config.hpp"
 #include "DSMgr.hpp"
+#include "Replacer.hpp"
+#include <list>
+#include <mutex>
+
+using std::list;
 
 struct BCB;
 struct bFrame;
 
+enum ReplacePolicy { Invalid = 0, Lru, Clock };
 // Buffer Manager
 class BMgr{
+    using Lock = std::lock_guard<std::mutex>;
 public:
     BMgr();
+    BMgr(string filename, int policy = ReplacePolicy::Lru, int frame_num = FRAME_NUM);
     // Interface functions
 
     // 查找页面是否已在缓冲区中，若不存在则加载页面
-    int FixPage(int page_id, int prot);
-    void NewPage(int& page_id, bFrame& frm);
-    int UnfixPage(int page_id);
+    frame_id_t FixPage(int page_id);
     void FixNewPage(int& page_id, bFrame& frm);
+    frame_id_t UnfixPage(int page_id);
     int NumFreeFrames();
 
     // Internal functions
     // 选择替换页面。
-    int SelectVictim();
+    frame_id_t SelectVictim();
 
     // 通过page_id获取frame_id。
-    int Hash(int page_id);
+    frame_id_t Hash(int page_id);
+    int hash(int page_id);
     void RemoveBCB(BCB* ptr, int page_id);
     void RemoveLRUEle(int frame_id);
     void UnsetDirty(int frame_id);
@@ -47,9 +55,15 @@ private:
     BCB* ptof[DEFBUFSIZE];
 
     // 用于替换的算法
-    LRUReplacer lru;
+    Replacer* replacer_;
 
     DSMgr* dsMgr;
+    list<int> free_list_;
+    std:: mutex latch_;
+    bFrame frame[DEFBUFSIZE];
+    list<int> LRUList;
+    int frame_num_;
+
 };
 
 #endif // __BMGR_HPP__

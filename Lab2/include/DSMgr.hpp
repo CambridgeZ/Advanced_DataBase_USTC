@@ -8,6 +8,8 @@
 #include "config.hpp"
 //data storage manager 
 #include <string>
+#include "Page.hpp"
+#include "Frame.hpp"
 
 using std::string;
 using std::shared_ptr;
@@ -19,17 +21,28 @@ struct bFrame;
 class DSMgr{
 public:
     explicit DSMgr();
+    explicit DSMgr(string filename);
+    ~DSMgr();
     // 打开指定的文件
     int OpenFile(string filename);
 
     // 关闭文件
     int CloseFile();
 
+    // 创建新的页面
+    page_id_t NewPage();
+
+    // 读取指定的页面
+    void ReadPage(page_id_t page_id, char* data);
+
     // 读取指定的页面
     shared_ptr<bFrame> ReadPage(int page_id);
 
     // 写入页面数据
     int WritePage(int frame_id, bFrame& frm);
+
+    int WritePage(Page* page);
+
 
     // 移动文件指针
     int Seek(int offset, int pos);
@@ -51,7 +64,7 @@ public:
 private:
     FILE* cuurentFile;
     int numPages;
-    int pages[MAXPAGES]
+    int pages[MAXPAGES];
 };
 
 
