@@ -1,7 +1,7 @@
-CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.cpp.o: \
-  /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.cpp \
-  /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/../include/Page.hpp \
-  /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/../include/config.hpp \
+CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.cpp.o: \
+  /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.cpp \
+  /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/../include/Page.hpp \
+  /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/../include/config.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/cstddef \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__config \

@@ -57,10 +57,10 @@ RM = /opt/homebrew/Cellar/cmake/3.30.4/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/test
+CMAKE_SOURCE_DIR = /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/test/build
+CMAKE_BINARY_DIR = /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/test/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/test/build/CMakeFiles /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/test/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/test/build/CMakeFiles /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/test/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/test/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/test/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -236,101 +236,101 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f googletest/googletest/CMakeFiles/gtest_main.dir/build.make googletest/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
-Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.o: Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.cpp.o
-.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.o
+Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.o: Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.cpp.o
+.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.o
 
 # target to build an object file
-Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_DSgr.dir/build.make CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.cpp.o
-.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.cpp.o
+Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_DSgr.dir/build.make CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.cpp.o
+.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.cpp.o
 
-Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.i: Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.cpp.i
-.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.i
+Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.i: Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.cpp.i
+.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.i
 
 # target to preprocess a source file
-Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_DSgr.dir/build.make CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.cpp.i
-.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.cpp.i
+Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_DSgr.dir/build.make CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.cpp.i
+.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.cpp.i
 
-Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.s: Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.cpp.s
-.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.s
+Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.s: Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.cpp.s
+.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.s
 
 # target to generate assembly for a file
-Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_DSgr.dir/build.make CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.cpp.s
-.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.cpp.s
+Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_DSgr.dir/build.make CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.cpp.s
+.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.cpp.s
 
-Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.o: Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.cpp.o
-.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.o
+Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.o: Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.cpp.o
+.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.o
 
 # target to build an object file
-Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_DSgr.dir/build.make CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.cpp.o
-.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.cpp.o
+Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_DSgr.dir/build.make CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.cpp.o
+.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.cpp.o
 
-Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.i: Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.cpp.i
-.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.i
+Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.i: Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.cpp.i
+.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.i
 
 # target to preprocess a source file
-Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_DSgr.dir/build.make CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.cpp.i
-.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.cpp.i
+Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_DSgr.dir/build.make CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.cpp.i
+.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.cpp.i
 
-Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.s: Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.cpp.s
-.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.s
+Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.s: Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.cpp.s
+.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.s
 
 # target to generate assembly for a file
-Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_DSgr.dir/build.make CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.cpp.s
-.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.cpp.s
+Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_DSgr.dir/build.make CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.cpp.s
+.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.cpp.s
 
-Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.o: Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.cpp.o
-.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.o
+Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.o: Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.cpp.o
+.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.o
 
 # target to build an object file
-Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_DSgr.dir/build.make CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.cpp.o
-.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.cpp.o
+Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_DSgr.dir/build.make CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.cpp.o
+.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.cpp.o
 
-Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.i: Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.cpp.i
-.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.i
+Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.i: Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.cpp.i
+.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.i
 
 # target to preprocess a source file
-Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_DSgr.dir/build.make CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.cpp.i
-.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.cpp.i
+Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_DSgr.dir/build.make CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.cpp.i
+.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.cpp.i
 
-Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.s: Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.cpp.s
-.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.s
+Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.s: Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.cpp.s
+.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.s
 
 # target to generate assembly for a file
-Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_DSgr.dir/build.make CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.cpp.s
-.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.cpp.s
+Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_DSgr.dir/build.make CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.cpp.s
+.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.cpp.s
 
-Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.o: Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.cpp.o
-.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.o
+Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.o: Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.cpp.o
+.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.o
 
 # target to build an object file
-Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_DSgr.dir/build.make CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.cpp.o
-.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.cpp.o
+Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_DSgr.dir/build.make CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.cpp.o
+.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.cpp.o
 
-Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.i: Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.cpp.i
-.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.i
+Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.i: Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.cpp.i
+.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.i
 
 # target to preprocess a source file
-Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_DSgr.dir/build.make CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.cpp.i
-.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.cpp.i
+Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_DSgr.dir/build.make CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.cpp.i
+.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.cpp.i
 
-Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.s: Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.cpp.s
-.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.s
+Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.s: Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.cpp.s
+.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.s
 
 # target to generate assembly for a file
-Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_DSgr.dir/build.make CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.cpp.s
-.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.cpp.s
+Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_DSgr.dir/build.make CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.cpp.s
+.PHONY : Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.cpp.s
 
 test_DSgr.o: test_DSgr.cpp.o
 .PHONY : test_DSgr.o
@@ -374,18 +374,18 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... test_DSgr"
-	@echo "... Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.o"
-	@echo "... Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.i"
-	@echo "... Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.s"
-	@echo "... Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.o"
-	@echo "... Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.i"
-	@echo "... Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.s"
-	@echo "... Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.o"
-	@echo "... Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.i"
-	@echo "... Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.s"
-	@echo "... Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.o"
-	@echo "... Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.i"
-	@echo "... Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.s"
+	@echo "... Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.o"
+	@echo "... Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.i"
+	@echo "... Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.s"
+	@echo "... Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.o"
+	@echo "... Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.i"
+	@echo "... Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.s"
+	@echo "... Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.o"
+	@echo "... Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.i"
+	@echo "... Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.s"
+	@echo "... Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.o"
+	@echo "... Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.i"
+	@echo "... Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.s"
 	@echo "... test_DSgr.o"
 	@echo "... test_DSgr.i"
 	@echo "... test_DSgr.s"

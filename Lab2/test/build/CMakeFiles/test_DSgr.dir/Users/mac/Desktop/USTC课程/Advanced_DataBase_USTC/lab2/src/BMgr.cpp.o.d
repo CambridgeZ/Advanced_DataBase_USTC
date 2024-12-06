@@ -1,7 +1,7 @@
-CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.cpp.o: \
-  /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.cpp \
-  /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/../include/BMgr.hpp \
-  /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/../include/config.hpp \
+CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.cpp.o: \
+  /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.cpp \
+  /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/../include/BMgr.hpp \
+  /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/../include/config.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/cstddef \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__config \
@@ -18,7 +18,7 @@ CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/__stddef_max_align_t.h \
-  /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/../include/DSMgr.hpp \
+  /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/../include/DSMgr.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/memory \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__memory/addressof.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__memory/align.h \
@@ -739,14 +739,14 @@ CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__functional/pointer_to_binary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__functional/pointer_to_unary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__functional/unary_negate.h \
-  /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/../include/Page.hpp \
-  /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/../include/Frame.hpp \
-  /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/../include/Replacer.hpp \
+  /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/../include/Page.hpp \
+  /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/../include/Frame.hpp \
+  /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/../include/Replacer.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/list \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/mutex \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__mutex_base \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/system_error \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__errc \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/cerrno \
-  /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/../include/BCB.hpp \
-  /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/../include/LRUReplacer.hpp
+  /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/../include/BCB.hpp \
+  /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/../include/LRUReplacer.hpp

@@ -71,20 +71,18 @@ int DSMgr::WritePage(int frame_id, bFrame& frm) {
 
 int DSMgr::WritePage(Page* page){
 
-    if(page->getPageId() >= numPages){
-        cerr << "Frame_id is out of range" << endl;
-        return -1;
-    }
-    if(Seek(page->getPageId() * FRAMESIZE, SEEK_SET) != 0){
+    page_id_t page_id = page->getPageId();
+    if(Seek(page_id * FRAMESIZE, SEEK_SET) != 0){
         cerr << "Seek Error" << endl;
         return -1;
     }
+
     if(fwrite(page->getData(), FRAMESIZE, 1, cuurentFile) != 1){
         cerr << "WritePage Error" << endl;
         return -1;
     }
-    return 0;
 
+    return 0;
 }
 
 

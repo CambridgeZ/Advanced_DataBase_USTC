@@ -8,11 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.cpp" "CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.cpp.o" "gcc" "CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.cpp.o.d"
-  "/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.cpp" "CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.cpp.o" "gcc" "CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.cpp.o.d"
-  "/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.cpp" "CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.cpp.o" "gcc" "CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.cpp.o.d"
-  "/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.cpp" "CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.cpp.o" "gcc" "CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.cpp.o.d"
-  "/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/test/test_DSgr.cpp" "CMakeFiles/test_DSgr.dir/test_DSgr.cpp.o" "gcc" "CMakeFiles/test_DSgr.dir/test_DSgr.cpp.o.d"
+  "/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.cpp" "CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.cpp.o" "gcc" "CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.cpp.o.d"
+  "/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.cpp" "CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.cpp.o" "gcc" "CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.cpp.o.d"
+  "/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.cpp" "CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.cpp.o" "gcc" "CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.cpp.o.d"
+  "/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.cpp" "CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.cpp.o" "gcc" "CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.cpp.o.d"
+  "/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/test/test_DSgr.cpp" "CMakeFiles/test_DSgr.dir/test_DSgr.cpp.o" "gcc" "CMakeFiles/test_DSgr.dir/test_DSgr.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

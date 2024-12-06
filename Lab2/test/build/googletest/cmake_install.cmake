@@ -1,4 +1,4 @@
-# Install script for directory: /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/googletest
+# Install script for directory: /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/googletest
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/test/build/googletest/googlemock/cmake_install.cmake")
+  include("/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/test/build/googletest/googlemock/cmake_install.cmake")
 
 endif()
 

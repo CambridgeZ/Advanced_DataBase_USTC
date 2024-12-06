@@ -1,6 +1,6 @@
-CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.cpp.o: \
-  /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.cpp \
-  /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/../include/DSMgr.hpp \
+CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.cpp.o: \
+  /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.cpp \
+  /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/../include/DSMgr.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/memory \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__config \
@@ -469,7 +469,7 @@ CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__iterator/sortable.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__iterator/unreachable_sentinel.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__iterator/wrap_iter.h \
-  /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/../include/config.hpp \
+  /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/../include/config.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/string \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__algorithm/max.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__algorithm/max_element.h \
@@ -738,8 +738,8 @@ CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__functional/pointer_to_binary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__functional/pointer_to_unary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__functional/unary_negate.h \
-  /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/../include/Page.hpp \
-  /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/../include/Frame.hpp \
+  /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/../include/Page.hpp \
+  /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/../include/Frame.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/ios \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__locale \

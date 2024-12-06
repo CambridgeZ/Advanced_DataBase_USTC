@@ -4,7 +4,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/test/include -I/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/test/googletest/googletest/include -isystem /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/googletest/googletest/include -isystem /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/googletest/googletest
+CXX_INCLUDES = -I/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/test/include -I/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/test/googletest/googletest/include -isystem /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/googletest/googletest/include -isystem /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/googletest/googletest
 
 CXX_FLAGSarm64 = -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk
 

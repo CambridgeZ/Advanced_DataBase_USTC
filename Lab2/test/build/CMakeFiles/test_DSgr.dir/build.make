@@ -53,10 +53,10 @@ RM = /opt/homebrew/Cellar/cmake/3.30.4/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/test
+CMAKE_SOURCE_DIR = /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/test/build
+CMAKE_BINARY_DIR = /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/test/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/test_DSgr.dir/depend.make
@@ -70,97 +70,97 @@ include CMakeFiles/test_DSgr.dir/progress.make
 include CMakeFiles/test_DSgr.dir/flags.make
 
 CMakeFiles/test_DSgr.dir/test_DSgr.cpp.o: CMakeFiles/test_DSgr.dir/flags.make
-CMakeFiles/test_DSgr.dir/test_DSgr.cpp.o: /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/test/test_DSgr.cpp
+CMakeFiles/test_DSgr.dir/test_DSgr.cpp.o: /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/test/test_DSgr.cpp
 CMakeFiles/test_DSgr.dir/test_DSgr.cpp.o: CMakeFiles/test_DSgr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test_DSgr.dir/test_DSgr.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_DSgr.dir/test_DSgr.cpp.o -MF CMakeFiles/test_DSgr.dir/test_DSgr.cpp.o.d -o CMakeFiles/test_DSgr.dir/test_DSgr.cpp.o -c /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/test/test_DSgr.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test_DSgr.dir/test_DSgr.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_DSgr.dir/test_DSgr.cpp.o -MF CMakeFiles/test_DSgr.dir/test_DSgr.cpp.o.d -o CMakeFiles/test_DSgr.dir/test_DSgr.cpp.o -c /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/test/test_DSgr.cpp
 
 CMakeFiles/test_DSgr.dir/test_DSgr.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test_DSgr.dir/test_DSgr.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/test/test_DSgr.cpp > CMakeFiles/test_DSgr.dir/test_DSgr.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/test/test_DSgr.cpp > CMakeFiles/test_DSgr.dir/test_DSgr.cpp.i
 
 CMakeFiles/test_DSgr.dir/test_DSgr.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_DSgr.dir/test_DSgr.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/test/test_DSgr.cpp -o CMakeFiles/test_DSgr.dir/test_DSgr.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/test/test_DSgr.cpp -o CMakeFiles/test_DSgr.dir/test_DSgr.cpp.s
 
-CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.cpp.o: CMakeFiles/test_DSgr.dir/flags.make
-CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.cpp.o: /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.cpp
-CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.cpp.o: CMakeFiles/test_DSgr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.cpp.o -MF CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.cpp.o.d -o CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.cpp.o -c /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.cpp
+CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.cpp.o: CMakeFiles/test_DSgr.dir/flags.make
+CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.cpp.o: /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.cpp
+CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.cpp.o: CMakeFiles/test_DSgr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.cpp.o -MF CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.cpp.o.d -o CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.cpp.o -c /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.cpp
 
-CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.cpp > CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.cpp.i
+CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.cpp > CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.cpp.i
 
-CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.cpp -o CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.cpp.s
+CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.cpp -o CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.cpp.s
 
-CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.cpp.o: CMakeFiles/test_DSgr.dir/flags.make
-CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.cpp.o: /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.cpp
-CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.cpp.o: CMakeFiles/test_DSgr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.cpp.o -MF CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.cpp.o.d -o CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.cpp.o -c /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.cpp
+CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.cpp.o: CMakeFiles/test_DSgr.dir/flags.make
+CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.cpp.o: /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.cpp
+CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.cpp.o: CMakeFiles/test_DSgr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.cpp.o -MF CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.cpp.o.d -o CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.cpp.o -c /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.cpp
 
-CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.cpp > CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.cpp.i
+CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.cpp > CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.cpp.i
 
-CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.cpp -o CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.cpp.s
+CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.cpp -o CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.cpp.s
 
-CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.cpp.o: CMakeFiles/test_DSgr.dir/flags.make
-CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.cpp.o: /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.cpp
-CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.cpp.o: CMakeFiles/test_DSgr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.cpp.o -MF CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.cpp.o.d -o CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.cpp.o -c /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.cpp
+CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.cpp.o: CMakeFiles/test_DSgr.dir/flags.make
+CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.cpp.o: /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.cpp
+CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.cpp.o: CMakeFiles/test_DSgr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.cpp.o -MF CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.cpp.o.d -o CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.cpp.o -c /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.cpp
 
-CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.cpp > CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.cpp.i
+CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.cpp > CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.cpp.i
 
-CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.cpp -o CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.cpp.s
+CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.cpp -o CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.cpp.s
 
-CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.cpp.o: CMakeFiles/test_DSgr.dir/flags.make
-CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.cpp.o: /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.cpp
-CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.cpp.o: CMakeFiles/test_DSgr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.cpp.o -MF CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.cpp.o.d -o CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.cpp.o -c /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.cpp
+CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.cpp.o: CMakeFiles/test_DSgr.dir/flags.make
+CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.cpp.o: /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.cpp
+CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.cpp.o: CMakeFiles/test_DSgr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.cpp.o -MF CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.cpp.o.d -o CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.cpp.o -c /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.cpp
 
-CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.cpp > CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.cpp.i
+CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.cpp > CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.cpp.i
 
-CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.cpp -o CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.cpp.s
+CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.cpp -o CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.cpp.s
 
 # Object files for target test_DSgr
 test_DSgr_OBJECTS = \
 "CMakeFiles/test_DSgr.dir/test_DSgr.cpp.o" \
-"CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.cpp.o" \
-"CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.cpp.o" \
-"CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.cpp.o" \
-"CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.cpp.o"
+"CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.cpp.o" \
+"CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.cpp.o" \
+"CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.cpp.o" \
+"CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.cpp.o"
 
 # External object files for target test_DSgr
 test_DSgr_EXTERNAL_OBJECTS =
 
 test_DSgr: CMakeFiles/test_DSgr.dir/test_DSgr.cpp.o
-test_DSgr: CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/BMgr.cpp.o
-test_DSgr: CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/DSMgr.cpp.o
-test_DSgr: CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/LRUReplacer.cpp.o
-test_DSgr: CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/src/Page.cpp.o
+test_DSgr: CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/BMgr.cpp.o
+test_DSgr: CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/DSMgr.cpp.o
+test_DSgr: CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/LRUReplacer.cpp.o
+test_DSgr: CMakeFiles/test_DSgr.dir/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/src/Page.cpp.o
 test_DSgr: CMakeFiles/test_DSgr.dir/build.make
 test_DSgr: lib/libgtest.a
 test_DSgr: lib/libgtest_main.a
 test_DSgr: lib/libgtest.a
 test_DSgr: CMakeFiles/test_DSgr.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable test_DSgr"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable test_DSgr"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_DSgr.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -172,6 +172,6 @@ CMakeFiles/test_DSgr.dir/clean:
 .PHONY : CMakeFiles/test_DSgr.dir/clean
 
 CMakeFiles/test_DSgr.dir/depend:
-	cd /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/test /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/test /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/test/build /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/test/build /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/lab2/test/build/CMakeFiles/test_DSgr.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/test /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/test /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/test/build /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/test/build /Users/mac/Desktop/USTC课程/Advanced_DataBase_USTC/Lab2/test/build/CMakeFiles/test_DSgr.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/test_DSgr.dir/depend
 
