@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.12)
 
-project(Test_DSgr)
+project(.)
 
 # 设置 C++ 标准
 set(CMAKE_CXX_STANDARD 17)
@@ -13,7 +13,7 @@ file(GLOB SOURCES ../src/*.cpp)
 enable_testing()
 
 # 添加 GoogleTest 子目录
-add_subdirectory("../googletest" "${CMAKE_BINARY_DIR}/googletest")
+add_subdirectory("../../googletest" "${CMAKE_BINARY_DIR}/googletest")
 
 # 包含头文件目录
 include_directories(

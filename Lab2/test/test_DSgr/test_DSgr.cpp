@@ -7,8 +7,8 @@
 #include <stdio.h>
 #include <iostream>
 
-#include "../include/DSMgr.hpp"
-#include "../include/Page.hpp"
+#include "../../include/DSMgr.hpp"
+#include "../../include/Page.hpp"
 
 using std::cout;
 using std::endl;
