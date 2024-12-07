@@ -27,6 +27,7 @@ public:
     // 查找页面是否已在缓冲区中，若不存在则加载页面
     frame_id_t FixPage(int page_id);
     void FixNewPage(int& page_id, bFrame& frm);
+    frame_id_t FixNewPage(int& page_id);
     frame_id_t UnfixPage(int page_id);
     int NumFreeFrames();
 
@@ -38,10 +39,15 @@ public:
     frame_id_t Hash(int page_id);
     int hash(int page_id);
     void RemoveBCB(BCB* ptr, int page_id);
+
+    // 通过frame_id删除LRU链表中的元素。
     void RemoveLRUEle(int frame_id);
     void UnsetDirty(int frame_id);
     void SetDirty(int frame_id);
     void PrintFrame(int frame_id);
+    void PrintReplacer();
+    void PrintPageTable();
+
 
 private:
     // Hash Table
@@ -61,6 +67,8 @@ private:
     list<int> free_list_;
     std:: mutex latch_;
     bFrame frame[DEFBUFSIZE];
+
+    // 用于LRU算法的链表， 用于记录最近访问的页面
     list<int> LRUList;
     int frame_num_;
 

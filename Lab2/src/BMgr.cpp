@@ -3,6 +3,11 @@
 #include "../include/BCB.hpp"
 #include "../include/LRUReplacer.hpp"
 
+#include <iostream>
+
+using std::cout;
+using std::endl;
+
 BMgr::BMgr(){
     for(int i = 0; i < DEFBUFSIZE; i++){
         ftop[i] = -1;
@@ -28,7 +33,13 @@ BMgr::BMgr(string filename, int policy, int frame_num){
     }
 }
 
-
+void BMgr::PrintPageTable(){
+    for(int i = 0; i < DEFBUFSIZE; i++){
+        if(ptof[i] != nullptr){
+            cout << "frame_id: " << i << " page_id: " << ptof[i]->page_id << " count: " << ptof[i]->count << " dirty: " << ptof[i]->dirty << " latch: " << ptof[i]->latch << endl;
+        }
+    }
+}
 
 
 
@@ -109,6 +120,24 @@ void BMgr::FixNewPage(int& page_id, bFrame& frm){
     ftop[ptof[frame_id]->frame_id] = frame_id;
     LRUList.push_back(ptof[frame_id]->frame_id);
     frm = frame[ptof[frame_id]->frame_id];
+}
+
+frame_id_t BMgr::FixNewPage(int &page_id) {
+    frame_id_t frame_id = SelectVictim();
+    if(frame_id == -1){
+        return -1;
+    }
+
+    page_id = dsMgr->NewPage();
+    fseek(dsMgr->GetFile(), page_id * PAGE_SIZE, SEEK_SET);
+    fread(&frame[ptof[frame_id]->frame_id], sizeof(char), PAGE_SIZE, dsMgr->GetFile());
+    ptof[frame_id]->page_id = page_id;
+    ptof[frame_id]->count = 1;
+    ptof[frame_id]->dirty = 0;
+    ptof[frame_id]->latch = 1;
+    ftop[ptof[frame_id]->frame_id] = frame_id;
+    LRUList.push_back(ptof[frame_id]->frame_id);
+    return frame_id;
 }
 
 frame_id_t BMgr::UnfixPage(int page_id) {
@@ -199,6 +228,10 @@ frame_id_t BMgr::SelectVictim() {
 
 void BMgr:: RemoveLRUEle(int frid){
     LRUList.remove(frid);
+}
+
+void BMgr::PrintReplacer() {
+    replacer_->Print();
 }
 
 

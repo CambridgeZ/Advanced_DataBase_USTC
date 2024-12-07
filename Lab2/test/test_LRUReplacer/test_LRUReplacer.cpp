@@ -43,11 +43,6 @@ TEST(LRUReplacerTest1, SampleTest) {
 }
 
 int main(int argc, char **argv) {
-    /*
-     * 程序运行输入参数：
-     * 1. --gtest_filter=LRUReplacerTest1.SampleTest
-     * 2. --gtest_filter=LRUReplacerTest2.SampleTest
-     */
   testing::InitGoogleTest(&argc, argv);
   return RUN_ALL_TESTS();
 }
