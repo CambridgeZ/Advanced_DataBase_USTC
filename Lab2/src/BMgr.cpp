@@ -13,6 +13,11 @@ BMgr::BMgr(){
         ftop[i] = -1;
         ptof[i] = nullptr;
     }
+
+    // 设置free_list
+    for(int i = 0; i < DEFBUFSIZE; i++){
+        free_list_.push_back(i);
+    }
 }
 
 BMgr::BMgr(string filename, int policy, int frame_num){
@@ -43,6 +48,10 @@ void BMgr::PrintPageTable(){
 
 
 void BMgr:: SetDirty(int frame_id){
+    if(frame_id == -1){
+        cout<<"SetDirtyError: frame_id is -1"<<endl;
+        return ;
+    }
     if(ptof[frame_id] == nullptr){
         return;
     }
@@ -60,6 +69,7 @@ frame_id_t BMgr::FixPage(int page_id) {
     BCB* ptr = ptof[frame_id];
     while(ptr != nullptr){
         if(ptr->page_id == page_id){
+            // 如果在缓冲区中
             ptr->count++;
             return frame_id;
         }
@@ -71,11 +81,24 @@ frame_id_t BMgr::FixPage(int page_id) {
     if(victim == -1){
         return -1;
     }
-    if(ptof[victim] == nullptr){
-        ptof[victim] = new BCB();
-        // 读取数据
-        fseek(dsMgr->GetFile(), page_id * PAGE_SIZE, SEEK_SET);
+    // 如果牺牲者是脏的，写回磁盘
+    if(ptof[victim] != nullptr && ptof[victim]->dirty == 1){
+        // 写回磁盘
+        // 从磁盘中读取数据
+        fseek(dsMgr->GetFile(), ptof[victim]->page_id * PAGE_SIZE, SEEK_SET);
         fread(&frame[ptof[victim]->frame_id], sizeof(char), PAGE_SIZE, dsMgr->GetFile());
+    }
+    // 从BCB中删除
+    if(ptof[victim] != nullptr) {
+        RemoveBCB(ptof[victim], ptof[victim]->page_id);
+        // 从hash表中删除
+        ftop[ptof[victim]->frame_id] = -1;
+        // 从LRU链表中删除
+        RemoveLRUEle(ptof[victim]->frame_id);
+        // 读取数据
+        //    fseek(dsMgr->GetFile(), page_id * PAGE_SIZE, SEEK_SET);
+        //    fread(&frame[ptof[victim]->frame_id], sizeof(char), PAGE_SIZE, dsMgr->GetFile());
+        dsMgr->ReadPage(page_id, frame[ptof[victim]->frame_id].field);
         // 更新BCB
         ptof[victim]->page_id = page_id;
         ptof[victim]->count = 1;
@@ -85,33 +108,17 @@ frame_id_t BMgr::FixPage(int page_id) {
         ftop[ptof[victim]->frame_id] = victim;
         // 更新LRU链表
         LRUList.push_back(ptof[victim]->frame_id);
-        return victim;
     }
-    // 如果牺牲者是脏的，写回磁盘
-    if(ptof[victim] != nullptr && ptof[victim]->dirty == 1){
-        // 写回磁盘
-        // 从磁盘中读取数据
-        fseek(dsMgr->GetFile(), ptof[victim]->page_id * PAGE_SIZE, SEEK_SET);
-        fread(&frame[ptof[victim]->frame_id], sizeof(char), PAGE_SIZE, dsMgr->GetFile());
+    else{
+        // 更新BCB
+        ptof[victim] = new BCB(page_id, victim, 1);
+        // 更新hash表
+        ftop[ptof[victim]->frame_id] = victim;
+        // 读取数据
+        dsMgr->ReadPage(page_id, frame[ptof[victim]->frame_id].field);
+        // 更新LRU链表
+        LRUList.push_back(ptof[victim]->frame_id);
     }
-    // 从BCB中删除
-    RemoveBCB(ptof[victim], ptof[victim]->page_id);
-    // 从hash表中删除
-    ftop[ptof[victim]->frame_id] = -1;
-    // 从LRU链表中删除
-    RemoveLRUEle(ptof[victim]->frame_id);
-    // 读取数据
-    fseek(dsMgr->GetFile(), page_id * PAGE_SIZE, SEEK_SET);
-    fread(&frame[ptof[victim]->frame_id], sizeof(char), PAGE_SIZE, dsMgr->GetFile());
-    // 更新BCB
-    ptof[victim]->page_id = page_id;
-    ptof[victim]->count = 1;
-    ptof[victim]->dirty = 0;
-    ptof[victim]->latch = 1;
-    // 更新hash表
-    ftop[ptof[victim]->frame_id] = victim;
-    // 更新LRU链表
-    LRUList.push_back(ptof[victim]->frame_id);
     return victim;
 }
 
@@ -183,6 +190,9 @@ frame_id_t BMgr::Hash(int page_id) {
 }
 
 void BMgr::RemoveBCB(BCB* ptr, int page_id){
+    if(ptr == nullptr){
+        return;
+    }
     int frame_id = Hash(page_id);
     BCB* p = ptof[frame_id];
     if(p == ptr){
@@ -243,6 +253,12 @@ frame_id_t BMgr::SelectVictim() {
 
 void BMgr:: RemoveLRUEle(int frid){
     LRUList.remove(frid);
+    // 写回磁盘
+    if(ptof[frid]->dirty == 1){
+//        fseek(dsMgr->GetFile(), ptof[frid]->page_id * PAGE_SIZE, SEEK_SET);
+//        fwrite(&frame[ptof[frid]->frame_id], sizeof(char), PAGE_SIZE, dsMgr->GetFile());
+        dsMgr->WritePage(ptof[frid]->frame_id, frame[ptof[frid]->frame_id]);
+    }
 }
 
 void BMgr::PrintReplacer() {

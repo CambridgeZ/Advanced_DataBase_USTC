@@ -101,6 +101,8 @@ DSMgr::DSMgr(string filename){
     numPages = 0;
     memset(pages, 0, sizeof(pages));
     OpenFile(filename);
+
+
 }
 
 page_id_t DSMgr::NewPage(){
@@ -119,6 +121,7 @@ page_id_t DSMgr::NewPage(){
 }
 
 void DSMgr::ReadPage(page_id_t page_id, char* data){
+    IOcount++;
     if(Seek(page_id * FRAMESIZE, SEEK_SET) != 0){
         cerr << "Seek Error" << endl;
         return;
