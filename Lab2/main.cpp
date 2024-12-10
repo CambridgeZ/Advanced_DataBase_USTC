@@ -6,7 +6,7 @@
 #include "./include/BMgr.hpp"
 #include "./include/LRUReplacer.hpp"
 
-#define TRACE_FILE "./data_mini.txt"
+#define TRACE_FILE "./data-5w-50w-zipf.txt"
 
 using std::cout;
 using std::endl;
@@ -35,7 +35,7 @@ int main(){
 
     int count = 0;
     while(fscanf(trace_file, "%d,%d\n", &op, &page_id) == 2){
-        cout<< ++count<<" "<<op<<" "<<page_id<<" lines has finished" <<endl;
+//        cout<< ++count<<" "<<op<<" "<<page_id<<" lines has finished" <<endl;
         if(op == 0){// read
             bmgr->FixPage(page_id);
         }

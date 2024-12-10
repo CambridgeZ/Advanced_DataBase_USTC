@@ -65,6 +65,13 @@ int BMgr:: hash(int page_id){
 
 frame_id_t BMgr::FixPage(int page_id) {
     // 查找是否在缓冲区中
+    for(int i=0 ; i< DEFBUFSIZE; i++){
+        if(ftop[i] == page_id){
+            // 在缓冲区当中
+            ptof[i]->count++;
+            return i;
+        }
+    }
     int frame_id = hash(page_id);
     BCB* ptr = ptof[frame_id];
     while(ptr != nullptr){
@@ -105,7 +112,7 @@ frame_id_t BMgr::FixPage(int page_id) {
         ptof[victim]->dirty = 0;
         ptof[victim]->latch = 1;
         // 更新hash表
-        ftop[ptof[victim]->frame_id] = victim;
+        ftop[ptof[victim]->frame_id] = page_id;
         // 更新LRU链表
         LRUList.push_back(ptof[victim]->frame_id);
     }
@@ -113,7 +120,7 @@ frame_id_t BMgr::FixPage(int page_id) {
         // 更新BCB
         ptof[victim] = new BCB(page_id, victim, 1);
         // 更新hash表
-        ftop[ptof[victim]->frame_id] = victim;
+        ftop[ptof[victim]->frame_id] = page_id;
         // 读取数据
         dsMgr->ReadPage(page_id, frame[ptof[victim]->frame_id].field);
         // 更新LRU链表
@@ -239,13 +246,14 @@ frame_id_t BMgr::SelectVictim() {
     BCB* p = ptof[victim_fid];
 
     if (p->dirty == 1) {
-        fseek(dsMgr->GetFile(), p->page_id * PAGE_SIZE, SEEK_SET);
-        fwrite(&frame[p->frame_id], sizeof(char), PAGE_SIZE, dsMgr->GetFile());
+//        fseek(dsMgr->GetFile(), p->page_id * PAGE_SIZE, SEEK_SET);
+//        fwrite(&frame[p->frame_id], sizeof(char), PAGE_SIZE, dsMgr->GetFile());
+        dsMgr->WritePage(p->frame_id, frame[p->frame_id]);
         p->dirty = 0;
     }
 
-    RemoveBCB(ptof[victim_fid], ptof[victim_fid]->page_id);
     ftop[ptof[victim_fid]->frame_id] = -1;
+    RemoveBCB(ptof[victim_fid], ptof[victim_fid]->page_id);
     RemoveLRUEle(ptof[victim_fid]->frame_id);
     return victim_fid;
 
