@@ -61,10 +61,15 @@ public:
 
     // 获取页面使用位
     inline int GetUse(int index);
+
+    inline static int getIOcount(){
+        return IOcount;
+    }
 private:
     FILE* cuurentFile;
     int numPages;
     int pages[MAXPAGES];
+    static int IOcount;
 };
 
 

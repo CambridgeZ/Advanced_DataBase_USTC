@@ -42,8 +42,6 @@ void BMgr::PrintPageTable(){
 }
 
 
-
-
 void BMgr:: SetDirty(int frame_id){
     if(ptof[frame_id] == nullptr){
         return;
@@ -57,6 +55,7 @@ int BMgr:: hash(int page_id){
 
 
 frame_id_t BMgr::FixPage(int page_id) {
+    // 查找是否在缓冲区中
     int frame_id = hash(page_id);
     BCB* ptr = ptof[frame_id];
     while(ptr != nullptr){
@@ -72,8 +71,24 @@ frame_id_t BMgr::FixPage(int page_id) {
     if(victim == -1){
         return -1;
     }
+    if(ptof[victim] == nullptr){
+        ptof[victim] = new BCB();
+        // 读取数据
+        fseek(dsMgr->GetFile(), page_id * PAGE_SIZE, SEEK_SET);
+        fread(&frame[ptof[victim]->frame_id], sizeof(char), PAGE_SIZE, dsMgr->GetFile());
+        // 更新BCB
+        ptof[victim]->page_id = page_id;
+        ptof[victim]->count = 1;
+        ptof[victim]->dirty = 0;
+        ptof[victim]->latch = 1;
+        // 更新hash表
+        ftop[ptof[victim]->frame_id] = victim;
+        // 更新LRU链表
+        LRUList.push_back(ptof[victim]->frame_id);
+        return victim;
+    }
     // 如果牺牲者是脏的，写回磁盘
-    if(ptof[victim]->dirty == 1){
+    if(ptof[victim] != nullptr && ptof[victim]->dirty == 1){
         // 写回磁盘
         // 从磁盘中读取数据
         fseek(dsMgr->GetFile(), ptof[victim]->page_id * PAGE_SIZE, SEEK_SET);

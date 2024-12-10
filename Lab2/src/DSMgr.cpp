@@ -8,6 +8,7 @@
 using std::cerr;
 using std::endl;
 
+int DSMgr::IOcount = 0;
 
 int DSMgr::OpenFile(string filename){
     cuurentFile = fopen(filename.c_str(), "r+");
@@ -54,6 +55,7 @@ int DSMgr::Seek(int offset, int pos) {
 }
 
 int DSMgr::WritePage(int frame_id, bFrame& frm) {
+    IOcount++;
     if(frame_id >= numPages){
         cerr << "Frame_id is out of range" << endl;
         return -1;
@@ -70,7 +72,7 @@ int DSMgr::WritePage(int frame_id, bFrame& frm) {
 }
 
 int DSMgr::WritePage(Page* page){
-
+    IOcount++;
     page_id_t page_id = page->getPageId();
     if(Seek(page_id * FRAMESIZE, SEEK_SET) != 0){
         cerr << "Seek Error" << endl;
@@ -129,6 +131,7 @@ void DSMgr::ReadPage(page_id_t page_id, char* data){
 
 
 shared_ptr<bFrame> DSMgr::ReadPage(int page_id){
+    IOcount++;
     shared_ptr<bFrame> ret = std::make_shared<bFrame>();
     if(Seek(page_id * FRAMESIZE, SEEK_SET) != 0){
         cerr << "Seek Error" << endl;
