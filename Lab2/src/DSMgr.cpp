@@ -56,8 +56,9 @@ int DSMgr::Seek(int offset, int pos) {
 
 int DSMgr::WritePage(int frame_id, bFrame& frm) {
     IOcount++;
-    if(frame_id >= numPages){
+    if(frame_id >= DEFBUFSIZE){
         cerr << "Frame_id is out of range" << endl;
+        std::cout<<"frame_id: "<<frame_id<<endl;
         return -1;
     }
     if(Seek(frame_id * FRAMESIZE, SEEK_SET) != 0){
@@ -127,7 +128,7 @@ void DSMgr::ReadPage(page_id_t page_id, char* data){
         return;
     }
     if(fread(data, FRAMESIZE, 1, cuurentFile) != 1){
-        cerr << "ReadPage Error" << endl;
+//        cerr << "ReadPage Error" << endl;
         return;
     }
 }
