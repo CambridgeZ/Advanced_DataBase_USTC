@@ -9,7 +9,7 @@
 //buffer control block
 
 struct BCB{
-    BCB():page_id(-1), frame_id(-1), latch(0), count(0), dirty(0), next(nullptr){}
+    BCB():page_id(-1), frame_id(-1), latch(0), count(0), dirty(0), next(nullptr),LRU_next(nullptr),LRU_prev(nullptr){}
     BCB(int page_id, int frame_id, int count):page_id(page_id), frame_id(frame_id), latch(0), count(count), dirty(0), next(nullptr){}
     int page_id;
     int frame_id;
@@ -17,6 +17,9 @@ struct BCB{
     int count;      // 计数器
     int dirty;
     BCB* next;
+
+    BCB* LRU_next;
+    BCB* LRU_prev;
 };
 
 

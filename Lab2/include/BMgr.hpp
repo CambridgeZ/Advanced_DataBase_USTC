@@ -72,6 +72,18 @@ private:
     list<int> LRUList;
     int frame_num_;
 
+    BCB* LRU_head;
+    BCB* LRU_tail;
+
+public:
+    void ReMoveToTheTailOfLRUList(BCB* ptr);
+    BCB* insertToTheTailOfLRUList(BCB* ptr);
+    bool deleteBCBFromPTOF(int frame_id);
+
+    void printLRUList();
+
+    int BCB_count;
+
 };
 
 #endif // __BMGR_HPP__

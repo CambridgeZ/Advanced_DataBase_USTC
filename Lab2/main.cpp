@@ -11,6 +11,7 @@
 using std::cout;
 using std::endl;
 
+
 int main(){
     int buf_size = DEFBUFSIZE;
     auto buf = new bFrame[buf_size];
@@ -44,9 +45,8 @@ int main(){
             bmgr->SetDirty(FrameID);
         }
 
-        bmgr->UnfixPage(page_id);
+//        bmgr->UnfixPage(page_id);
     }
-
     fclose(trace_file);
 
     delete bmgr;

@@ -9,6 +9,7 @@ using std::cout;
 using std::endl;
 
 BMgr::BMgr(){
+    BCB_count = 0;
     for(int i = 0; i < DEFBUFSIZE; i++){
         ftop[i] = -1;
         ptof[i] = nullptr;
@@ -21,6 +22,9 @@ BMgr::BMgr(){
 }
 
 BMgr::BMgr(string filename, int policy, int frame_num){
+    LRU_tail = nullptr;
+    LRU_head = nullptr;
+    BCB_count = 0;
     for(int i = 0; i < DEFBUFSIZE; i++){
         ftop[i] = -1;
         ptof[i] = nullptr;
@@ -64,69 +68,134 @@ int BMgr:: hash(int page_id){
 
 
 frame_id_t BMgr::FixPage(int page_id) {
+//    if(LRU_head!= nullptr){
+//        cout<<"LRU_head: "<<LRU_head->frame_id<<endl;
+//    }
     // 查找是否在缓冲区中
-    for(int i=0 ; i< DEFBUFSIZE; i++){
-        if(ftop[i] == page_id){
-            // 在缓冲区当中
-            ptof[i]->count++;
-            return i;
-        }
-    }
-    int frame_id = hash(page_id);
-    BCB* ptr = ptof[frame_id];
+    int hash_id = hash(page_id);
+    BCB* ptr = ptof[hash_id];
     while(ptr != nullptr){
         if(ptr->page_id == page_id){
-            // 如果在缓冲区中
             ptr->count++;
-            return frame_id;
+            ReMoveToTheTailOfLRUList(ptr);
+            return ptr->frame_id;
         }
         ptr = ptr->next;
     }
-    // 如果没有找到
-    // 选择一个牺牲者
-    int victim = SelectVictim();
-    if(victim == -1){
+
+    // 在表中没有找到
+
+    if(BCB_count < DEFBUFSIZE){
+        // 内存当中还有没有分配的块
+        frame_id_t frameId = BCB_count;
+        BCB_count++;
+        BCB* newBCB = new BCB(page_id, frameId, 1);
+        insertToTheTailOfLRUList(newBCB);
+        newBCB->next = ptof[hash_id];
+        ptof[hash_id] = newBCB;
+        ftop[frameId] = page_id;
+        // 将数据读入到frame当中
+        dsMgr->ReadPage(page_id, frame[frameId].field);
+        return frameId;
+    }
+
+    // 内存当中没有空闲的块了
+    frame_id_t frame_id = SelectVictim();
+    if(frame_id == -1){
+        std::cerr<<"SelectVictimError: frame_id is -1"<<std::endl;
+        exit(-1);
         return -1;
     }
-    // 如果牺牲者是脏的，写回磁盘
-    if(ptof[victim] != nullptr && ptof[victim]->dirty == 1){
-        // 写回磁盘
-        // 从磁盘中读取数据
-        fseek(dsMgr->GetFile(), ptof[victim]->page_id * PAGE_SIZE, SEEK_SET);
-        fread(&frame[ptof[victim]->frame_id], sizeof(char), PAGE_SIZE, dsMgr->GetFile());
+    else if(frame_id > DEFBUFSIZE){
+        // 出错后进行的相关测试
+        std::cerr<<"SelectVictimError: frame_id is larger than DEFBUFSIZE"<<std::endl;
+        // 遍历LRU 链表
+        cout<<"show all the frame_id in the LRU list"<<endl;
+
+        BCB* ptr = LRU_head;
+        int this_count = 0;
+        while(ptr!= nullptr && ptr != LRU_tail && this_count<1024){
+            this_count++;
+            cout<<ptr->frame_id<<"-->";
+            ptr=ptr->LRU_next;
+        }
+        cout<<LRU_tail->frame_id<<endl;
+        cout<<this_count<<endl;
+        cout<<endl;
+
+        ptr = LRU_tail;
+        this_count = 0;
+        while(ptr!= nullptr && ptr != LRU_head && this_count<1024){
+            this_count++;
+            cout<<ptr->frame_id<<"-->";
+            ptr=ptr->LRU_prev;
+        }
+        cout<<ptr->frame_id<<endl;
+        cout<<this_count<<endl;
+        exit(-1);
+        return -1;
     }
-    // 从BCB中删除
-    if(ptof[victim] != nullptr) {
-        RemoveBCB(ptof[victim], ptof[victim]->page_id);
-        // 从hash表中删除
-        ftop[ptof[victim]->frame_id] = -1;
-        // 从LRU链表中删除
-        RemoveLRUEle(ptof[victim]->frame_id);
-        // 读取数据
-        //    fseek(dsMgr->GetFile(), page_id * PAGE_SIZE, SEEK_SET);
-        //    fread(&frame[ptof[victim]->frame_id], sizeof(char), PAGE_SIZE, dsMgr->GetFile());
-        dsMgr->ReadPage(page_id, frame[ptof[victim]->frame_id].field);
-        // 更新BCB
-        ptof[victim]->page_id = page_id;
-        ptof[victim]->count = 1;
-        ptof[victim]->dirty = 0;
-        ptof[victim]->latch = 1;
-        // 更新hash表
-        ftop[ptof[victim]->frame_id] = page_id;
-        // 更新LRU链表
-        LRUList.push_back(ptof[victim]->frame_id);
+//    else{
+//        cout<<"has successfully selected a victim"<<endl;
+//        // 说明对于链表的破坏在找到之后对于链表的操作上
+//    }
+
+    // 找到分配得到的块当中原来的page_id
+    // 将原来的BCB删除
+    if(!deleteBCBFromPTOF(frame_id)){
+        std::cerr<<"deleteBCBFromPTOFError: frame_id is -1"<<std::endl;
+        //展示这个链表上面的所有的page_id和frame_id
+        cout<<"frame_id:"<<frame_id<<endl;
+        cout<<"show all the page_id and frame_id in the list"<<endl;
+        BCB* p = ptof[hash_id];
+        while(p != nullptr){
+            cout<<"page_id: "<<p->page_id<<" frame_id: "<<p->frame_id<<endl;
+            p = p->next;
+        }
+        exit(-1);
+        return -1;
+    }
+
+    // 将新的page_id插入到BCB当中
+    BCB* newBCB = new BCB(page_id, frame_id, 1);
+
+    // 插入到LRU链表当中
+    insertToTheTailOfLRUList(newBCB);
+    // 插入到ptof表当中
+    newBCB->next = ptof[hash_id];
+    ptof[hash_id] = newBCB;
+    ftop[frame_id] = page_id;
+    // 将数据读入到frame当中
+    dsMgr->ReadPage(page_id, frame[frame_id].field);
+
+    return frame_id;
+}
+
+bool BMgr::deleteBCBFromPTOF(int frame_id) {
+    int Old_page_id = ftop[frame_id];
+    ftop[frame_id] = -1;
+    int Old_hash_id = hash(Old_page_id);
+    BCB *p = ptof[Old_hash_id];
+
+    if(p->frame_id == frame_id){
+        // 要删除的节点在链表的开头
+        ptof[Old_hash_id] = p->next;
+        delete p;
+        return true;
     }
     else{
-        // 更新BCB
-        ptof[victim] = new BCB(page_id, victim, 1);
-        // 更新hash表
-        ftop[ptof[victim]->frame_id] = page_id;
-        // 读取数据
-        dsMgr->ReadPage(page_id, frame[ptof[victim]->frame_id].field);
-        // 更新LRU链表
-        LRUList.push_back(ptof[victim]->frame_id);
+        while(p->next != nullptr){
+            if(p->next->frame_id == frame_id){
+                BCB* tmp = p->next;
+                p->next = tmp->next;
+                delete tmp;
+                return true;
+            }
+            p = p->next;
+        }
     }
-    return victim;
+    // 没有找到要删除的节点
+    return false;
 }
 
 void BMgr::FixNewPage(int& page_id, bFrame& frm){
@@ -170,7 +239,7 @@ frame_id_t BMgr::FixNewPage(int &page_id) {
 }
 
 frame_id_t BMgr::UnfixPage(int page_id) {
-    Lock lock(latch_);
+//    Lock lock(latch_);
     int frame_id = hash(page_id);
     BCB* ptr = ptof[frame_id];
     while(ptr != nullptr){
@@ -234,29 +303,17 @@ void BMgr::PrintFrame(int frame_id) {
 }
 
 frame_id_t BMgr::SelectVictim() {
-    frame_id_t frame_id = -1;
-    if (!free_list_.empty()) {
-        frame_id = free_list_.front();
-        free_list_.pop_front();
-        return frame_id;
-    }
-    frame_id_t victim_fid = replacer_->SelectVictim();
-    if (victim_fid == -1)
+    if(LRU_head == nullptr){
         return -1;
-    BCB* p = ptof[victim_fid];
-
-    if (p->dirty == 1) {
-//        fseek(dsMgr->GetFile(), p->page_id * PAGE_SIZE, SEEK_SET);
-//        fwrite(&frame[p->frame_id], sizeof(char), PAGE_SIZE, dsMgr->GetFile());
-        dsMgr->WritePage(p->frame_id, frame[p->frame_id]);
-        p->dirty = 0;
     }
-
-    ftop[ptof[victim_fid]->frame_id] = -1;
-    RemoveBCB(ptof[victim_fid], ptof[victim_fid]->page_id);
-    RemoveLRUEle(ptof[victim_fid]->frame_id);
-    return victim_fid;
-
+    BCB* ptr = this->LRU_head;
+    int ret = ptr->frame_id;
+    if(ptr->dirty){
+        // 处理写过的脏的页面
+        dsMgr->WritePage(ptr->frame_id, frame[ptr->frame_id]);
+    }
+    LRU_head = ptr->LRU_next;
+    return ret;
 }
 
 void BMgr:: RemoveLRUEle(int frid){
@@ -271,6 +328,53 @@ void BMgr:: RemoveLRUEle(int frid){
 
 void BMgr::PrintReplacer() {
     replacer_->Print();
+}
+
+void BMgr::ReMoveToTheTailOfLRUList(BCB *ptr) {
+    // 将当前指针指向的BCB移动到LRU链表的尾部
+    if(LRU_head == ptr && LRU_tail == ptr){
+        return ;
+    }
+    else if(LRU_head == ptr){
+        LRU_head = ptr->LRU_next;
+        ptr->LRU_next = nullptr;
+        ptr->LRU_prev = LRU_tail;
+        LRU_tail->LRU_next = ptr;
+        LRU_tail = ptr;
+    }
+    else if(LRU_tail == ptr){
+        return ;
+    }
+    else{
+        ptr->LRU_prev->LRU_next = ptr->LRU_next;
+        ptr->LRU_next->LRU_prev = ptr->LRU_prev;
+        ptr->LRU_next = nullptr;
+        ptr->LRU_prev = LRU_tail;
+        LRU_tail->LRU_next = ptr;
+        LRU_tail = ptr;
+    }
+}
+
+BCB* BMgr::insertToTheTailOfLRUList(BCB *ptr) {
+    // 插入到LRU链表的尾部
+    if(LRU_head == nullptr){
+        LRU_head = ptr;
+        LRU_tail = ptr;
+    }
+    else{
+        LRU_tail->LRU_next = ptr;
+        ptr->LRU_prev = LRU_tail;
+        LRU_tail = ptr;
+    }
+    return ptr;
+}
+
+void BMgr::printLRUList() {
+    BCB* ptr = LRU_head;
+    while(ptr != nullptr){
+        cout<<"page_id: "<<ptr->page_id<<" frame_id: "<<ptr->frame_id<<" count: "<<ptr->count<<" dirty: "<<ptr->dirty<<" latch: "<<ptr->latch<<endl;
+        ptr = ptr->LRU_next;
+    }
 }
 
 
