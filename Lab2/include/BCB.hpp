@@ -18,6 +18,7 @@ struct BCB{
     int dirty;
     BCB* next;
 
+    // 用于存储在LRU 链表当中
     BCB* LRU_next;
     BCB* LRU_prev;
 };

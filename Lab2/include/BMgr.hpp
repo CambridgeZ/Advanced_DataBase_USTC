@@ -44,9 +44,10 @@ public:
     void RemoveLRUEle(int frame_id);
     void UnsetDirty(int frame_id);
     void SetDirty(int frame_id);
-    void PrintFrame(int frame_id);
     void PrintReplacer();
     void PrintPageTable();
+
+    void printFrame(int frame_id);
 
 
 private:

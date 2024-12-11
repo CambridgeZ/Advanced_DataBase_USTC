@@ -68,9 +68,6 @@ int BMgr:: hash(int page_id){
 
 
 frame_id_t BMgr::FixPage(int page_id) {
-//    if(LRU_head!= nullptr){
-//        cout<<"LRU_head: "<<LRU_head->frame_id<<endl;
-//    }
     // 查找是否在缓冲区中
     int hash_id = hash(page_id);
     BCB* ptr = ptof[hash_id];
@@ -135,10 +132,7 @@ frame_id_t BMgr::FixPage(int page_id) {
         exit(-1);
         return -1;
     }
-//    else{
-//        cout<<"has successfully selected a victim"<<endl;
-//        // 说明对于链表的破坏在找到之后对于链表的操作上
-//    }
+
 
     // 找到分配得到的块当中原来的page_id
     // 将原来的BCB删除
@@ -258,7 +252,7 @@ frame_id_t BMgr::UnfixPage(int page_id) {
 }
 
 int BMgr::NumFreeFrames(){
-    return free_list_.size();
+    return DEFBUFSIZE-BCB_count;
 }
 
 frame_id_t BMgr::Hash(int page_id) {
@@ -292,14 +286,6 @@ void BMgr::UnsetDirty(int frame_id) {
         return;
     }
     ptof[frame_id]->dirty = 0;
-}
-
-void BMgr::PrintFrame(int frame_id) {
-    printf("frame %d:\n", frame_id);
-    printf("page id: %d\n", ptof[frame_id]->page_id);
-    printf("dirty: %d\n", ptof[frame_id]->dirty);
-    printf("pin count: %d\n", ptof[frame_id]->count);
-    printf("\n");
 }
 
 frame_id_t BMgr::SelectVictim() {
@@ -377,6 +363,14 @@ void BMgr::printLRUList() {
     }
 }
 
+void BMgr::printFrame(int frame_id) {
+    cout<<"frame_id: "<<frame_id<<endl;
+
+    for(int i = 0; i < PAGE_SIZE; i++){
+        cout<<frame[frame_id].field[i];
+    }
+    cout<<endl;
+}
 
 
 

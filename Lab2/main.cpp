@@ -44,7 +44,6 @@ int main(){
             int FrameID =  bmgr->FixPage(page_id);
             bmgr->SetDirty(FrameID);
         }
-
 //        bmgr->UnfixPage(page_id);
     }
     fclose(trace_file);
