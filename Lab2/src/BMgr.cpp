@@ -8,6 +8,8 @@
 using std::cout;
 using std::endl;
 
+int BMgr::hitCount = 0;
+
 BMgr::BMgr(){
     BCB_count = 0;
     for(int i = 0; i < DEFBUFSIZE; i++){
@@ -73,6 +75,7 @@ frame_id_t BMgr::FixPage(int page_id) {
     BCB* ptr = ptof[hash_id];
     while(ptr != nullptr){
         if(ptr->page_id == page_id){
+            hitCount++;
             ptr->count++;
             ReMoveToTheTailOfLRUList(ptr);
             return ptr->frame_id;
@@ -98,12 +101,13 @@ frame_id_t BMgr::FixPage(int page_id) {
 
     // 内存当中没有空闲的块了
     frame_id_t frame_id = SelectVictim();
-    if(frame_id == -1){
+    if(frame_id <= -1){
         std::cerr<<"SelectVictimError: frame_id is -1"<<std::endl;
         exit(-1);
         return -1;
     }
     else if(frame_id > DEFBUFSIZE){
+        cout<<"frame_id: "<<frame_id<<endl;
         // 出错后进行的相关测试
         std::cerr<<"SelectVictimError: frame_id is larger than DEFBUFSIZE"<<std::endl;
         // 遍历LRU 链表
@@ -124,7 +128,7 @@ frame_id_t BMgr::FixPage(int page_id) {
         this_count = 0;
         while(ptr!= nullptr && ptr != LRU_head && this_count<1024){
             this_count++;
-            cout<<ptr->frame_id<<"-->";
+            cout<<ptr->frame_id<<"<--";
             ptr=ptr->LRU_prev;
         }
         cout<<ptr->frame_id<<endl;
@@ -165,6 +169,36 @@ frame_id_t BMgr::FixPage(int page_id) {
     return frame_id;
 }
 
+bool BMgr:: ReMoveBCBInLRUList(BCB* p){
+    if(p == nullptr){
+        return false;
+    }
+    if(p->LRU_prev == nullptr && p->LRU_next == nullptr){
+        // 要删除的节点是唯一的节点
+        this->LRU_head = nullptr;
+        this->LRU_tail = nullptr;
+        return true;
+    }
+    else if(p->LRU_prev == nullptr){
+        // 要删除的节点在链表的开头
+        this->LRU_head = p->LRU_next;
+        p->LRU_next->LRU_prev = nullptr;
+        return true;
+    }
+    else if(p->LRU_next == nullptr){
+        // 要删除的节点在链表的末尾
+        this->LRU_tail = p->LRU_prev;
+        p->LRU_prev->LRU_next = nullptr;
+        return true;
+    }
+    else{
+        p->LRU_prev->LRU_next = p->LRU_next;
+        p->LRU_next->LRU_prev = p->LRU_prev;
+        return true;
+    }
+
+}
+
 bool BMgr::deleteBCBFromPTOF(int frame_id) {
     int Old_page_id = ftop[frame_id];
     ftop[frame_id] = -1;
@@ -174,6 +208,7 @@ bool BMgr::deleteBCBFromPTOF(int frame_id) {
     if(p->frame_id == frame_id){
         // 要删除的节点在链表的开头
         ptof[Old_hash_id] = p->next;
+//        ReMoveBCBInLRUList(p);
         delete p;
         return true;
     }
@@ -182,6 +217,7 @@ bool BMgr::deleteBCBFromPTOF(int frame_id) {
             if(p->next->frame_id == frame_id){
                 BCB* tmp = p->next;
                 p->next = tmp->next;
+//                ReMoveBCBInLRUList(tmp);
                 delete tmp;
                 return true;
             }
@@ -223,6 +259,7 @@ frame_id_t BMgr::FixNewPage(int &page_id) {
     page_id = dsMgr->NewPage();
     fseek(dsMgr->GetFile(), page_id * PAGE_SIZE, SEEK_SET);
     fread(&frame[ptof[frame_id]->frame_id], sizeof(char), PAGE_SIZE, dsMgr->GetFile());
+//    dsMgr->ReadPage(page_id, frame[ptof[frame_id]->frame_id]);
     ptof[frame_id]->page_id = page_id;
     ptof[frame_id]->count = 1;
     ptof[frame_id]->dirty = 0;
@@ -233,7 +270,6 @@ frame_id_t BMgr::FixNewPage(int &page_id) {
 }
 
 frame_id_t BMgr::UnfixPage(int page_id) {
-//    Lock lock(latch_);
     int frame_id = hash(page_id);
     BCB* ptr = ptof[frame_id];
     while(ptr != nullptr){
@@ -306,8 +342,6 @@ void BMgr:: RemoveLRUEle(int frid){
     LRUList.remove(frid);
     // 写回磁盘
     if(ptof[frid]->dirty == 1){
-//        fseek(dsMgr->GetFile(), ptof[frid]->page_id * PAGE_SIZE, SEEK_SET);
-//        fwrite(&frame[ptof[frid]->frame_id], sizeof(char), PAGE_SIZE, dsMgr->GetFile());
         dsMgr->WritePage(ptof[frid]->frame_id, frame[ptof[frid]->frame_id]);
     }
 }
@@ -343,7 +377,7 @@ void BMgr::ReMoveToTheTailOfLRUList(BCB *ptr) {
 
 BCB* BMgr::insertToTheTailOfLRUList(BCB *ptr) {
     // 插入到LRU链表的尾部
-    if(LRU_head == nullptr){
+    if(LRU_head == nullptr && LRU_tail == nullptr){
         LRU_head = ptr;
         LRU_tail = ptr;
     }
@@ -352,6 +386,21 @@ BCB* BMgr::insertToTheTailOfLRUList(BCB *ptr) {
         ptr->LRU_prev = LRU_tail;
         LRU_tail = ptr;
     }
+    // 遍历输出一次链表
+//    BCB* p = LRU_head;
+//    while(p != nullptr){
+//        cout<<p->frame_id<<"-->";
+//        p = p->LRU_next;
+//    }
+// 统计链表长度
+//    int count = 0;
+//    BCB* p = LRU_head;
+//    while(p != nullptr){
+//        count++;
+//        p = p->LRU_next;
+//    }
+//    cout<<"length:"<<count<<" ";
+
     return ptr;
 }
 

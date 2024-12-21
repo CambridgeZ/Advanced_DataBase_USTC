@@ -36,6 +36,7 @@ int main(){
 
     int count = 0;
     while(fscanf(trace_file, "%d,%d\n", &op, &page_id) == 2){
+        count++;
 //        cout<< ++count<<" "<<op<<" "<<page_id<<" lines has finished" <<endl;
         if(op == 0){// read
             bmgr->FixPage(page_id);
@@ -51,6 +52,8 @@ int main(){
     delete bmgr;
 
     cout << "IO count: " << DSMgr::getIOcount() << endl;
+    cout << "Hit count: " << BMgr::getHitCount() << endl;
+    cout << "Hit rate: " << (double)BMgr::getHitCount() / count << endl;
 
     return 0;
 }

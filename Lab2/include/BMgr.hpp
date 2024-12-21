@@ -49,6 +49,8 @@ public:
 
     void printFrame(int frame_id);
 
+    bool ReMoveBCBInLRUList(BCB* p);
+
 
 private:
     // Hash Table
@@ -84,7 +86,15 @@ public:
     void printLRUList();
 
     int BCB_count;
+    static int hitCount;
+
+    static int getHitCount(){
+        return hitCount;
+    }
 
 };
+
+
+
 
 #endif // __BMGR_HPP__
